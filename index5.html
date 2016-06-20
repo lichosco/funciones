@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	 var total = prompt("Introduce una cadena a comprobar:");
+
+      if (palindromo(total)){
+         alert("Es palindromo");
+      }else{
+         alert("No es palindromo");
+      }
+
+      function palindromo(cadena){
+         var temp = quitarEspacios(cadena.toLowerCase());
+         return (temp == darVueltaCadena(temp));
+      }
+
+      function quitarEspacios(cadena){
+         return cadena.split(" ").join("");
+      }
+
+      function darVueltaCadena(cadena){
+         return cadena.split("").reverse().join("");
+      }
+	</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var option= prompt("Ingrese una opcion donde /n/ 1 es sumar, 2 es restar, 3 es dividir y 4 es multiplicar");
+
+	function suma(x, y)
+	{
+		var res= x + y;
+		return res;
+	}
+	function resta (x, y)
+	{
+		var res= x - y;
+		return res;
+	}
+	function mult(x, y)
+	{
+		var res= x*y;
+		return res;
+	}
+	function div(x, y)
+	{
+		var res= x/y;
+		return res;
+	}
+
+	switch(option)
+	{
+		case "1":
+		var x= prompt("Ingrese primer numero a sumar");
+		var y= prompt("Ingrese segundo numero a sumar");
+		alert(suma(x, y));
+		break;
+		case "2":
+		var x= prompt("Ingrese primer numero a restar");
+		var y= prompt("Ingrese segundo numero a restar");
+		alert(resta(x, y));
+		break;
+		case "3":
+		var x= prompt("Ingrese primer numero a dividir");
+		var y= prompt("Ingrese segundo numero a dividir");
+		alert(div(x, y));
+		break;
+		case "4":
+		var x= prompt("Ingrese primer numero a multiplicar");
+		var y= prompt("Ingrese segundo numero a multiplicar");
+		alert(mult(x, y));
+		break;
+	}
+	</script>
+</body>
+</html>

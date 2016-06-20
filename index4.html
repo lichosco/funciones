@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var cadena= prompt("Ingrese una cadena de texto");
+function info(cadena) {
+ 
+  var res = "La cadena \""+cadena+"\" ";
+ 
+  
+  if(cadena == cadena.toUpperCase()) {
+    res += " está formada por mayúsculas";
+  }
+  else if(cadena == cadena.toLowerCase()) {
+    res += " está formada por minúsculas";
+  }
+  else {
+    res += " está formada por mayúsculas y minúsculas";
+  }
+ 
+  return res;
+}
+ 
+alert(info(cadena));
+</script>
+</body>
+</html>

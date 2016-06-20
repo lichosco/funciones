@@ -1,0 +1,35 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	var x=parseInt(prompt("Ingrse un numero"));
+	var y=parseInt(prompt("Ingrse un numero"));
+	var z=parseInt(prompt("Ingrse un numero"));
+	function Ordenar(x, y, z)
+	{
+		if(x<y && x<z)
+		{
+			alert("El orden es:" + x + y + z);
+		}
+		else
+		{
+			if(y<x && y<z)
+			{
+				alert("El orden es: " + y + x + z);
+
+			}
+			else
+			{
+				alert("el orden es:"+ z + x+  y);
+			}
+		}
+	}
+
+	Ordenar(x, y, z);
+
+	</script>
+</body>
+</html>
